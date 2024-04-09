@@ -1,5 +1,11 @@
+import 'fastestsmallesttextencoderdecoder';
+import { WitnessClient } from '@witnessco/client';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+
+
+const witness = new WitnessClient(process.env.WITNESS_API_KEY);
+
 
 export default function App() {
   return (
